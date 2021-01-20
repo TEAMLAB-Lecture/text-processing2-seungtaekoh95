@@ -33,7 +33,7 @@ def digits_to_words(input_string):
     for i in input_string:
         if i.isdigit():
             digit_string += digit[ord(i)-ord('0')]+' '
-    return digit_string
+    return digit_string[:-1]
 
 
 """
